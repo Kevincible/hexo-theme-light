@@ -1,0 +1,14 @@
+<div class="widget">
+    <h3 class="title">
+        <%= __('links') %>
+    </h3>
+    <div class="entry">
+        <% theme.links.forEach(function(link){ %>
+            <p>
+                <a href="<%= link.url %>" target="_blank" rel="noopener noreferrer">
+                    <%= link.title %>
+                </a>
+            </p>
+        <% }); %>
+    </div>
+</div>
