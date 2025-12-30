@@ -38,4 +38,6 @@
   </div>
 </article>
 
+<% if (item.comments === undefined || item.comments === true) { %>
 <%- partial('comment') %>
+<% } %>
